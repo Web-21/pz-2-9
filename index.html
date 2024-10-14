@@ -12,9 +12,39 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    
+    <section id="start-screen" class="iav-screen">
+        <h1>Моя друга гра</h1>
+        <button id="start-game-btn" class="main-style">Почати гру</button>
+    </section>
+
+    <div id="game-screen" class="iav-screen">
+        <div class="iav-back-btn-cont">
+            <button id="back-btn" class="iav-back-btn main-style"> ⮜ Назад </button>
+        </div>
+        <div id="game-area" class="iav-game-area">
+            <div id="grid" class="iav-grid-container"></div>
+            
+            <div id="draggable-area" class="iav-draggable-area">
+                <button id="restart-btn" class="main-style">Почати з початку</button>
+                <img id="draggable-img"  class="iav-draggable">
+            </div>
+        </div>
+    </div>  
+
+    <div id="modal-window" class="iav-modal-window">
+        <div class="iav-up-side">
+            <p id="text" >Не вірний вибір</p>
+        </div>
+        <div class="iav-down-side">
+            <button id="ok-btn" class="main-style small">Добре</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
