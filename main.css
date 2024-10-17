@@ -115,3 +115,18 @@ h1 {
     font-size: medium;
     font-weight: bold;
 }
+
+.iav-score-container {
+    position: absolute;
+    display: grid;
+    right: 19%;
+    top: 35%;
+
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.iav-true-answer {
+    opacity: 0.5;
+    filter: grayscale(80%);
+}

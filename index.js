@@ -47,6 +47,7 @@ $(document).ready(function() {
 
             if (draggedImage === targetImage) {
                 $(this).addClass('matched');
+                $(this).addClass('iav-true-answer');
 
                 let availableImages = images.filter(img => !$(`img[src='./img/${img}']`).parent().hasClass('matched'));
                 if (availableImages.length > 0) {
@@ -55,6 +56,7 @@ $(document).ready(function() {
                 }
 
                 correctMatches++;
+                $('#score-text').text(`${correctMatches}/10`);
 
                 ui.draggable.animate({
                     left: originalPosition.left,
@@ -64,6 +66,8 @@ $(document).ready(function() {
                 if (correctMatches === 10) {
                     $('#text').text("Вітаю, Ви перемогли!")
                     $('#modal-window').show();
+
+                    $("#draggable-img").draggable("disable");
                 }
             } else {
                 ui.draggable.animate({
@@ -78,6 +82,13 @@ $(document).ready(function() {
 
     $('#restart-btn').click(function() {
         correctMatches = 0;
+        $('#score-text').text(`${correctMatches}/10`);
+
+        $('.iav-true-answer').removeClass('iav-true-answer');
+        $('.matched').removeClass('matched');
+
+        $("#draggable-img").draggable("enable");
+
         let newImage = images[Math.floor(Math.random() * images.length)];
         $("#draggable-img").attr('src', `./img/${newImage}`);
     });
