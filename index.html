@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя друга гра</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="mainScreen">
+  <h1>Моя друга гра</h1>
+  <button id="startButton">Почати гру</button>
+</div>
+
+<div id="gameScreen">
+  <!-- Кнопка "Назад" -->
+  <button id="backButton">Назад</button>
+
+  <div id="imageGrid"></div>
+  <div id="dragArea">
+    <div id="imageContainer">
+      <img src="" id="draggableImage" class="draggableImage" alt="Перетягни мене">
+    </div>
+    <button id="restartButton">Почати знову</button>
+  </div>
+</div>
+
+<div id="errorDialog" title="Невірний вибір" style="display: none;">
+</div>
+<div id="winDialog" title="Вітаємо, ви виграли" style="display: none;">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
