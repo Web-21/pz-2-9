@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#screen1, #screen2 {
+    margin-top: 50px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+    margin: 0 auto;
+    width: 550px;
+}
+.grid-cell {
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+.grid-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#draggableArea {
+    margin-top: 20px;
+}
+#draggableImage {
+    width: 100px;
+    cursor: pointer;
+    background-color: #a4c639;
+    border: 3px solid red;
+}
+#resetButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#screen1 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+#startButton, #resetButton, #backButton {
+    background-color: #3b2f20; 
+    color: #a4c639;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#startButton:hover, #resetButton:hover, #backButton:hover {
+    background-color: #2e2418; 
+}
