@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Game</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <section id="intro-screen">
+        <h1>Військова гра</h1>
+        <button id="play-button">Розпочати</button>
+    </section>
+
+    <section id="game-screen" style="display: none;">
+        <div id="game-container">
+
+            <div id="grid-area"></div>
+
+            <div id="action-area">
+                <button id="reset-button">Перезапустити</button>
+                <div id="draggable-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="failure-popup" title="Помилка">
+        <p>Неправильний вибір! Спробуйте ще раз.</p>
+    </div>
+
+    <div id="victory-popup" title="Перемога">
+        <p>Вітаємо! Ви знайшли всі збіги!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
