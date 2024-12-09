@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PZ-2-9</title>
+    <!-- Include stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- =================================================================================== -->
+    <!-- MAIN CONTENT -->
+    <div id="screen-1" class="screen">
+        <h1 class="title">Моя друга гра</h1>
+        <button id="start-button">Почати гру</button>
+    </div>
+
+    <div id="screen-2" class="screen hidden">
+        <button id="restart-button">Почати з початку</button>
+        <div id="game-board"></div>
+        <div id="drag-area">
+            <img id="drag-image" src="" alt="Image to match">
+        </div>
+    </div>
+
+    <div id="not-cor" title="Error">
+        <p>Не вірний вибір</p>
+    </div>
+
+    <div id="suc-cor" title="Congratulations">
+        <p>Вітаю ви виграли</p>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- =================================================================================== -->
+</body>
+</html>
