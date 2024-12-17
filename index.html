@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pz_2_9</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div id="first-screen">
+        <h1>MY 2 GAME</h1>
+        <button id="start-button">START</button>
+    </div>
+
+    <div id="second-screen">
+        <div id="game-area">
+
+            <div id="cell-grid"></div>
+
+
+            <div id="drag-area">
+                <button id="restart-button">RESTART</button>
+                <div id="drag-image"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="success-dialog" title="WINER">
+        <p>YOU WОN</p>
+    </div>
+
+    <div id="error-dialog" title="not true ">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
