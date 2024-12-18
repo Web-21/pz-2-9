@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second game</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="screen1">
+    <h1>Second game</h1>
+    <button id="startBtn">Start game</button>
+  </div>
+
+  <div id="screen2">
+    <div id="grid"></div>
+    <div id="draggableArea">
+      <div id="dragContainer">
+        <img src="" id="draggableImg" class="draggableImg" alt="Перетягни мене">
+      </div>
+      <button id="restartBtn">Start again</button>
+    </div>
+  </div>
+
+  <div id="errorDialog" title="Помилка" style="display: none;">
+    <p></p>
+  </div>
+  <div id="winDialog" title="Перемога" style="display: none;">
+    <p>Congratulatios</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
