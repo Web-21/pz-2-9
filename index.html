@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра Вікінгів</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Початок гри -->
+    <div id="start-screen">
+        <h1>ГРА ШАЛЕНИХ КАРТИНОК</h1>
+        <button id="start-btn">Почати гру</button>
+    </div>
+
+    <!-- Ігрове поле -->
+    <div id="game-screen" style="display:none;">
+        <h2>ЗЗНАЙДИ ПАРУ ДЛЯ ОБРАНОГО ОБ'ЄКТА </h2>
+
+        <!-- Область вибору об'єкта -->
+        <div id="selection-area">
+            <h3>Обери об'єкт:</h3>
+            <div id="select-object"></div>
+        </div>
+
+        <!-- Ігрова сітка -->
+        <div id="game-area">
+            <div class="grid"></div>
+        </div>
+
+        <!-- Повідомлення про виграш після 10 вірних виборів -->
+        <div id="final-win-message" style="display:none;">
+            <h2>Вітаю! Ви виграли!</h2>
+            <button id="restart-game">Почати знову</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
